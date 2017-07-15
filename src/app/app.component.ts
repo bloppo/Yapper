@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+  showAlert: boolean = true;
+  hideAlert(): void {
+    this.showAlert = ! this.showAlert;
+  }
 }
